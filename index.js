@@ -20,6 +20,10 @@ app.use('/proyecciones', proyeccionRoutes);
 app.use('/recomendaciones', recomendacionRoutes);
 app.use('/logs', logRoutes);
 
-app.get('/', (req, res) => res.send('API Mi Futuro Habitat funcionando'));
+app.get('/', (req, res) => {
+  res.send('API Mi Futuro Habitat funcionando');
+});
 
-app.listen(3001, () => console.log('Servidor backend corriendo en puerto 3001'));
+app.listen(3001, () => {
+  console.log('Servidor backend corriendo en puerto 3001');
+});
