@@ -23,7 +23,9 @@ app.use('/logs', logRoutes);
 app.get('/', (req, res) => {
   res.send('API Mi Futuro Habitat funcionando');
 });
-
+app.get('/health', (req, res) => {
+  res.json({ ok: true });
+});
 app.listen(3001, () => {
   console.log('Servidor backend corriendo en puerto 3001');
 });
